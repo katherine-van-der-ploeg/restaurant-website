@@ -43,8 +43,6 @@ nav ul {
   width: 2em;
 }
 
------------------------------------------
-
 .banner {
   max-height: 500px;
   display: block;
@@ -93,8 +91,6 @@ p {
   background-color: black;
 }
 
------------------------------------------
-
 .card {
   overflow: hidden;
   border: 3px solid grey;
@@ -122,5 +118,3 @@ p {
   border: 3px solid black;
   border-radius: 10px;
 }
-
------------------------------------------
