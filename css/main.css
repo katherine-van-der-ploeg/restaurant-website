@@ -78,6 +78,7 @@ p {
 }
 
 .btn {
+  color: black;
   text-align: center;
   border: 3px solid grey;
   border-radius: 5px;
@@ -103,6 +104,7 @@ p {
 }
 
 .card-header {
+  text-decoration: none;
   margin: 0;
   padding: .3rem 1rem;
   width: 100%;
@@ -134,5 +136,27 @@ p {
 .info-image {
   width: 100%;
   padding-bottom: 2em;
-  
+}
+
+.menu {
+  overflow: hidden;
+  border: 3px solid grey;
+  border-radius: 10px;
+  background-color: grey;
+  width: 100%;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+h3 {
+  text-align: center;
+}
+
+footer {
+  background-color: grey;
+}
+
+.sm {
+  width: 10%;
+  float: right;
 }
