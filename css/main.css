@@ -63,8 +63,7 @@ nav ul {
   text-align: center;
   left: 50%;
   transform: translateX(-50%);
-  padding-left: 1em;
-  padding-right: 1em;
+  padding: 1em;
 }
 
 .banner-header {
@@ -94,22 +93,9 @@ p {
 }
 
 .card {
+  display: block;
+  position: relative;
   overflow: hidden;
-  border: 3px solid grey;
-  border-radius: 10px;
-  background-color: grey;
-  width: 100%;
-  margin-top: .5em;
-  margin-bottom: .5em;
-}
-
-.card-header {
-  text-decoration: none;
-  margin: 0;
-  padding: .3rem 1rem;
-  width: 100%;
-  text-align: center;
-  color: white;
 }
 
 .card-img {
@@ -117,10 +103,20 @@ p {
   width: 100%;
 }
 
+.card-header {
+  position: absolute;
+  top: 2.7em;
+  width: 100%;
+  max-width: 45em;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1em;
+}
+
 .card:hover {
   background-color: black;
-  border: 3px solid black;
-  border-radius: 10px;
+  opacity: 50%;
 }
 
 h2 {
@@ -159,4 +155,48 @@ footer {
 .sm {
   width: 10%;
   float: right;
+}
+
+@media only screen and (min-width: 25em) {
+
+  html {
+    font-size: 110%;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+
+  .banner-content {
+    top: 6em;
+    max-width: 60em;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 3em;
+  }
+  .card {
+    overflow: hidden;
+    border: 3px solid grey;
+    border-radius: 10px;
+    background-color: grey;
+    width: 100%;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+
+  .card-header {
+    text-decoration: none;
+    margin: 0;
+    padding: .3rem 1rem;
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
+
+  .card-img {
+    display: block;
+    width: 100%;
+  }
+
+
 }
