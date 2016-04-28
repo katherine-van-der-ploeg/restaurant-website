@@ -5,13 +5,17 @@
   <title>Restaurant Website</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,500|Lobster" rel="stylesheet">
 </head>
 <body>
   <header>
     <h1>The Marketplace</h1>
-    <img class="nav-icon" src="images/nav-icon.svg" alt="" >
     <nav>
-      <ul>
+      <input type="checkbox" class="toggle" id="toggle">
+      <label class="toggle-label" for="toggle">
+        <img class="nav-icon" src="images/nav-icon.svg" alt="Open Navigation" >
+      </label>
+      <ul class="nav">
         <li><a href="#why-marketplace">Why Marketplace?</a></li>
         <li><a href="#our-place">Our Place</a></li>
         <li><a href="#nutrition">Nutrition</a></li>
@@ -24,8 +28,8 @@
       <img class="img-flex" src="images/placeholder-4by3.svg" alt="">
       <div class="banner-content">
         <h2 class="banner-header">Need an alternative?</h2>
-        <p>Marketplace has that. Check out our menus today! </p>
-        <a class="btn" href="#">Go</a>
+        <p>Marketplace has that.</p>
+        <a class="btn" href="#menus">Check out our menus today!</a>
       </div>
     </div>
     <section>
