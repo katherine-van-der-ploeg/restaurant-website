@@ -33,7 +33,7 @@ header {
 h1 {
   margin: 0 0 .5rem;
   font-size: 1.5rem;
-  display: inline;
+  display: inline-block;
   font-family: "Lobster", cursive;
 }
 
@@ -152,7 +152,8 @@ p {
 
 .card-header {
   position: absolute;
-  top: .5em;
+  margin: 0;
+  top: 1em;
   width: 100%;
   max-width: 45em;
   text-align: center;
@@ -201,43 +202,96 @@ footer {
 
 @media only screen and (min-width: 25em) {
 
-  html {
+  body {
     font-size: 110%;
   }
 }
 
 @media only screen and (min-width: 38em) {
 
-  .banner-content {
-    top: 6em;
-    max-width: 60em;
-    text-align: center;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 3em;
-  }
-
   .card {
-    overflow: hidden;
-    border: 3px solid grey;
-    border-radius: 10px;
-    background-color: grey;
-    width: 100%;
-    margin-top: .5em;
-    margin-bottom: .5em;
-  }
-
-  .card-header {
-    text-decoration: none;
-    margin: 0;
-    padding: .3rem 1rem;
-    width: 100%;
-    text-align: center;
-    color: white;
+    width: 49%;
+    display: inline-block;
   }
 
   .card-img {
-    display: block;
-    width: 100%;
+    display: inline-block;
+  }
+
+  .card-header {
+    top: .7em;
+  }
+
+  .sm {
+    width: 8%;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  body {
+    font-size: 120%;
+    line-height: 1.4;
+  }
+
+  .card {
+    width: 24%;
+  }
+
+  .info {
+    display: inline-block;
+  }
+
+  .card-header {
+    top: .2em;
+  }
+
+  .info-image {
+    width: 50%;
+    padding-bottom: 2em;
+  }
+}
+
+.nav {
+  display: inline-block;
+  position: static;
+  vertical-align: middle;
+}
+
+nav a {
+  display: inline-block;
+  float: left;
+  width: 50%;
+}
+
+nav a:hover {
+  background-color: black;
+  color: white;
+}
+
+.toggle {
+  display: none;
+}
+
+.toggle-label img {
+  display: none;
+}
+
+.menu {
+  width: 32%;
+  display: inline-block;
+  margin-bottom: 2em;
+}
+
+.sm {
+  width: 6%;
+}
+
+@media only screen and (min-width: 90em) {
+
+  body {
+    font-size: 130%;
+    line-height: 1.5;
   }
 }
