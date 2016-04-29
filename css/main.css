@@ -23,17 +23,14 @@ body {
 }
 
 header {
-  padding:.5rem .5rem;
+  padding:.5rem 0;
   background-color: #ccc;
-  text-align: left;
-  position: relative;
-  padding: 1em;
+  text-align: center;
 }
 
 h1 {
   margin: 0 0 .5rem;
   font-size: 1.5rem;
-  display: inline-block;
   font-family: "Lobster", cursive;
 }
 
@@ -42,55 +39,20 @@ h1 {
   padding: 0;
   list-style-type: none;
   background-color: #ccc;
-  display: none;
-  position: absolute;
-  right: 0;
-  top: 100%;
-  width: 15em;
-}
-
-.nav a:hover {
-  background-color: black;
 }
 
 nav a {
   display: block;
-  padding: 0.5em;
   text-decoration: none;
+  padding-left: 3em;
+  padding-right: 3em;
   color: white;
+  text-align: center;
 }
 
 nav a:hover {
   background-color: black;
   color: white;
-}
-
-.toggle {
-  position: absolute;
-  top: -3em;
-}
-
-.toggle:checked ~ .nav {
-  display: block;
-}
-
-.toggle-label {
-  cursor: pointer;
-  font-size: 1.25rem;
-  display: inline-block;
-  width: 40px;
-  position: absolute;
-  right: 1em;
-  bottom: .5em;
-}
-
-.toggle-label img {
-  display: block;
-  width: 100%;
-}
-
-.toggle:checked ~ .toggle-label {
-  background-color: white;
 }
 
 .banner {
@@ -205,6 +167,11 @@ footer {
   body {
     font-size: 110%;
   }
+
+  nav li {
+    display: inline-block;
+    text-align: center;
+  }
 }
 
 @media only screen and (min-width: 38em) {
@@ -233,6 +200,23 @@ footer {
   body {
     font-size: 120%;
     line-height: 1.4;
+  }
+
+  header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: left;
+  }
+
+  h1,
+  nav {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  h1 {
+    margin-bottom: 0;
+    margin-right: 1.5rem;
   }
 
   .card {
@@ -270,14 +254,6 @@ nav a:hover {
   color: white;
 }
 
-.toggle {
-  display: none;
-}
-
-.toggle-label img {
-  display: none;
-}
-
 .menu {
   width: 32%;
   display: inline-block;
@@ -285,7 +261,7 @@ nav a:hover {
 }
 
 .sm {
-  width: 6%;
+  width: 5%;
 }
 
 @media only screen and (min-width: 90em) {
@@ -293,5 +269,9 @@ nav a:hover {
   body {
     font-size: 130%;
     line-height: 1.5;
+  }
+
+  .sm {
+    width: 4%;
   }
 }
